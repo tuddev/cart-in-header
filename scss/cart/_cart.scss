@@ -1,0 +1,199 @@
+.cart {
+    &__badge {
+        position: absolute;
+        right: 0;
+        left: auto;
+        border-radius: 60%;
+        padding: 2px 6px;
+        background: yellow;
+    }
+
+    &__img {
+        width: 30px;
+        height: 30px;
+        margin-right: 6px;
+        cursor: pointer;
+    }
+
+    &__open-button-container {
+        position: relative;
+        display: flex;    
+    }
+
+    &__price {
+        &::after {
+            content: ' ₽';
+        }
+    }
+
+    &__open-button {
+        display: flex;
+        position: relative;
+        max-width: 400px;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+
+    &__popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__popup-title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    &__popup-description {
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+
+    &__popup-price {
+        font-size: 16px;
+        font-weight: bold;
+        padding-right: 10px;
+        &::after {
+            content: ' ₽'
+        }
+    }
+
+    &__popup-products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__popup-product {
+        width: 100%;
+        padding: 16px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(212, 212, 212);
+
+        &--template {
+            display: none;
+        }
+    }
+
+    &__popup-about-product {
+        display: flex;
+        max-width: 250px;
+        align-items: center;
+    }
+
+    &__popup-product-img {
+        width: 100px;
+        height: 60px;
+        margin-right: 20px;
+        object-fit: contain;
+    }
+
+    &__popup-products-counter {
+        margin-top: 10px;
+        display: flex;
+        max-width: 100px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 6px;
+        border-radius: 6px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    &__popup-counter-button {
+        background: rgb(212, 212, 212);
+        padding: 4px 6px;
+        border-radius: 6px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__popup-products-number {
+        border: 1px solid rgb(212, 212, 212);
+        padding: 6px 10px;
+        width: 40px;
+        border-radius: 6px;
+    }
+
+    &__popup {
+        border-radius: 20px;
+        padding: 30px 20px;
+        background: white;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);
+        position: absolute;
+        top: 50px;
+        right: 0;
+    }
+    
+    &__popup-link {
+        text-decoration: none;
+        color: black; 
+    }
+    
+    &__popup-sum {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__popup-del-product-icon {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    &__popup-total {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__popup-subtitle {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    &__popup-final-price {
+        font-weight: bold;
+        font-size: 18px;
+        &::after {
+            content: ' ₽';
+        }
+    }
+
+    &__popup-footer {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+    }
+
+    &__popup-button {
+        cursor: pointer;
+        font-weight: 700;
+        border-radius: 10px;
+        background: rgb(255, 153, 0);
+        color: white;
+        padding: 10px 20px;
+        margin-right: 20px;
+        transition: .2s;
+
+        &:hover {
+            color: blue;
+            transition: .3s;
+        }
+
+        &--secondary {
+            color: black;
+            background: white;
+            border:1px solid rgb(196, 196, 196);    
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

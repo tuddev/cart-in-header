@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+</head>
+<body>
+    <div class="cart">
+        <div class="cart__open-button">
+            <div class="cart__open-button-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/2527/2527736.png" alt="cart" class="cart__img" id="cart-img">
+                <div class="cart__badge" id="cart-badge">1</div> 
+            </div>
+            <div class="cart__price" id="cart-price">776865р</div>
+            <div class="cart__popup" id="cart-popup">
+                <div class="cart__popup-header">
+                    <div class="cart__popup-title" >Goods(<span id="cart-popup-title">1</span>)</div>
+                    <div class="cart__popup-button cart__popup-button--secondary" id="reset-list-button">Clear list</div>
+                </div>
+                <div class="cart__popup-products" id="cart-popup-products">
+                    <div class="cart__popup-products-template">
+                        <div class="cart__popup-product--template cart__popup-product" id="cart-popup-product-template">
+                            <div class="cart__popup-about-product">
+                                <div class="cart__popup-img-and-counter">
+                                    <img src="https://m.iguides.ru/upload/iblock/3c2/3c27f5880d47b0cbba37431fc491892a.jpg" alt="" class="cart__popup-product-img" id="cart-popup-product-img">
+                                    <div class="cart__popup-products-counter">
+                                        <div class="cart__popup-counter-button" id="cart-popup-products-smaller">-</div>
+                                        <input class="cart__popup-products-number" id="cart-popup-products-number"></input>
+                                        <div class="cart__popup-counter-button" id="cart-popup-products-bigger">+</div>
+                                    </div>
+                                </div>
+                                <div class="cart__popup-description" id="cart-popup-description"></div>
+                            </div>
+                            <div class="cart__popup-sum">
+                                <div class="cart__popup-price" id="cart-popup-price"></div>
+                                <img src="https://cdn-icons-png.flaticon.com/512/2101/2101345.png" alt="delite product" class="cart__popup-del-product-icon" id="cart-popup-del-product-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__popup-products-container" id="cart-popup-products-container">
+                    </div>
+                </div>
+                <div class="cart__popup-total">
+                    <div class="cart__popup-subtitle">Final:</div>
+                    <div class="cart__popup-final-price" id="cart-popup-final-price"></div>
+                </div>
+                <div class="cart__popup-footer">
+                    <a class="cart__popup-button cart__popup-button--secondary">Order</a>
+                    <a class="cart__popup-button">To cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
